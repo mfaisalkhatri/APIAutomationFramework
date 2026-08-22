@@ -35,12 +35,12 @@ public class ConfigManager {
     }
 
     public boolean isRequestLoggingEnabled () {
-        return this.config.getLogging ()
+        return isLoggingEnabled () && this.config.getLogging ()
             .isRequest ();
     }
 
     public boolean isResponseLoggingEnabled () {
-        return this.config.getLogging ()
+        return isLoggingEnabled () && this.config.getLogging ()
             .isResponse ();
     }
 

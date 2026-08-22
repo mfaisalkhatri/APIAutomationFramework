@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import io.github.mfaisalkhatri.config.ConfigManager;
 import io.github.mfaisalkhatri.exceptions.ApiRequestException;
+import io.github.mfaisalkhatri.logging.FrameworkLogger;
 import io.github.mfaisalkhatri.request.ApiRequest;
 import io.github.mfaisalkhatri.response.ApiResponse;
 import io.restassured.RestAssured;
@@ -13,6 +14,7 @@ import io.restassured.http.Header;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.slf4j.Logger;
 
 public class RestAssuredClient implements ApiClient {
 
@@ -22,13 +24,17 @@ public class RestAssuredClient implements ApiClient {
         this.configManager = configManager;
     }
 
+    private static final Logger LOGGER = FrameworkLogger.getLogger (RestAssuredClient.class);
+
     @Override
     public ApiResponse execute (final ApiRequest request) {
         validateRequest (request);
+        logRequest (request);
         final RequestSpecification requestSpecification = createRequestSpecification (request);
 
         final Response response = requestSpecification.request (toRestAssuredMethod (request.getMethod ()),
             request.getEndpoint ());
+        logResponse (response);
         return toAPIResponse (response);
     }
 
@@ -89,5 +95,43 @@ public class RestAssuredClient implements ApiClient {
             .isBlank ()) {
             throw new ApiRequestException ("Endpoint must be specified");
         }
+    }
+
+    private void logRequest (final ApiRequest request) {
+        if (!this.configManager.isRequestLoggingEnabled ()) {
+            return;
+        }
+
+        LOGGER.info ("API Request: {} {}", request.getMethod (), request.getEndpoint ());
+        if (request.getHeaders () != null) {
+            LOGGER.info ("Request Headers: {}", request.getHeaders ());
+        }
+
+        if (request.getQueryParams () != null) {
+            LOGGER.info ("Request Query Params: {}", request.getQueryParams ());
+        }
+        if (request.getPathParams () != null) {
+            LOGGER.info ("Request Path Params: {}", request.getPathParams ());
+        }
+        if (request.getBody () != null) {
+            LOGGER.info ("Request Body: {}", request.getBody ());
+        }
+    }
+
+    private void logResponse (final Response response) {
+        if (!this.configManager.isResponseLoggingEnabled ()) {
+            return;
+        }
+
+        if (response.cookies () != null) {
+            LOGGER.info ("API Response Cookies: {}", response.cookies ());
+        }
+        LOGGER.info ("API Response Status: {}", response.statusCode ());
+        LOGGER.info ("API Response Status Line: {}", response.statusLine ());
+        LOGGER.info ("API Response Headers: {}", response.headers ());
+        LOGGER.info ("API Response Body: {}", response.body ()
+            .prettyPrint ());
+        LOGGER.info ("API Response Time: {} {}", response.time (), "ms");
+
     }
 }

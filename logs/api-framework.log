@@ -1,0 +1,915 @@
+2026-08-22 12:46:37.089 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:46:37.229 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-22 12:46:37.230 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-22 12:46:37.230 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-22 12:46:37.788 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-22 12:46:37.788 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-22 12:46:37.789 INFO  [main] RestAssuredClient - API Response Time: 186
+2026-08-22 12:46:37.789 INFO  [main] RestAssuredClient - API Response Headers: X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=303
+ETag=W/"12f-xjSLqpBVqeXmHA5oZxHM2cWR+G0"
+Date=Sat, 22 Aug 2026 07:16:37 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+2026-08-22 12:46:37.790 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-22 12:46:37.798 INFO  [main] RestAssuredClient - API Response Body: {"message":"Orders added successfully!","orders":[{"id":1,"user_id":"1","product_id":"1","product_name":"iPhone","product_amount":500,"qty":1,"tax_amt":5.99,"total_amt":505.99},{"id":2,"user_id":"1","product_id":"2","product_name":"iPad","product_amount":699,"qty":1,"tax_amt":7.99,"total_amt":706.99}]}
+2026-08-22 12:47:59.831 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:47:59.971 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-22 12:47:59.972 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-22 12:47:59.972 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-22 12:48:00.486 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-22 12:48:00.487 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-22 12:48:00.487 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-22 12:48:00.488 INFO  [main] RestAssuredClient - API Response Time: 149
+2026-08-22 12:48:00.488 INFO  [main] RestAssuredClient - API Response Headers: X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=555
+ETag=W/"22b-OpmLbKhiVJT7HD27TkQjmi+xK1E"
+Date=Sat, 22 Aug 2026 07:18:00 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+2026-08-22 12:48:00.506 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-22 12:48:46.334 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:48:46.470 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-22 12:48:46.470 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-22 12:48:46.470 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-22 12:48:46.975 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-22 12:48:46.975 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-22 12:48:46.975 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-22 12:48:46.978 INFO  [main] RestAssuredClient - API Response Time: 149000
+2026-08-22 12:48:46.978 INFO  [main] RestAssuredClient - API Response Headers: [X-Powered-By=Express, Content-Type=application/json; charset=utf-8, Content-Length=807, ETag=W/"327-xlZza6N5+nmYJDGBLduRxhStuho", Date=Sat, 22 Aug 2026 07:18:46 GMT, Connection=keep-alive, Keep-Alive=timeout=5]
+2026-08-22 12:48:46.994 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 6,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-22 12:49:25.699 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:49:25.833 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-22 12:49:25.834 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-22 12:49:25.834 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-22 12:49:26.336 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-22 12:49:26.337 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-22 12:49:26.337 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-22 12:49:26.337 INFO  [main] RestAssuredClient - API Response Headers: X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=1059
+ETag=W/"423-6egReRM6zfsVVts4ZmUjm+1Oo4o"
+Date=Sat, 22 Aug 2026 07:19:26 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+2026-08-22 12:49:26.356 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 6,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 7,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 8,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-22 12:49:26.359 INFO  [main] RestAssuredClient - API Response Time: 148000
+2026-08-22 12:50:24.689 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:50:24.821 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-22 12:50:24.821 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-22 12:50:24.822 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-22 12:50:25.317 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-22 12:50:25.318 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-22 12:50:25.318 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-22 12:50:25.318 INFO  [main] RestAssuredClient - API Response Headers: X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=1312
+ETag=W/"520-NEYvj0cBv1vgo9tUOpbTcDQFcJs"
+Date=Sat, 22 Aug 2026 07:20:25 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+2026-08-22 12:50:25.335 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 6,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 7,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 8,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 9,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 10,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-22 12:50:25.336 INFO  [main] RestAssuredClient - API Response Time: 145 ms
+2026-08-22 12:52:08.727 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:52:20.087 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:52:20.727 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-22 12:52:20.728 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-22 12:52:20.728 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-22 12:52:20.728 INFO  [main] RestAssuredClient - API Response Headers: X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=1820
+ETag=W/"71c-9mArFPx6BfeoQGjxyqdA5r3U/9M"
+Date=Sat, 22 Aug 2026 07:22:20 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+2026-08-22 12:52:20.747 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 6,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 7,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 8,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 9,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 10,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 11,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 12,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 13,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 14,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-22 12:52:20.748 INFO  [main] RestAssuredClient - API Response Time: 145 ms
+2026-08-22 12:52:45.597 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:52:45.731 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-22 12:52:45.732 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-22 12:52:45.732 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-22 12:54:23.472 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:54:23.607 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-22 12:54:23.607 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-22 12:54:23.607 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-22 12:54:39.874 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:54:47.421 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-22 12:54:48.058 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-22 12:54:48.058 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-22 12:54:48.058 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-22 12:54:48.058 INFO  [main] RestAssuredClient - API Response Headers: X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=2836
+ETag=W/"b14-1bj2OhLFzLaLUAU9+P8SqQzjkBs"
+Date=Sat, 22 Aug 2026 07:24:48 GMT
+Connection=keep-alive
+Keep-Alive=timeout=5
+2026-08-22 12:54:48.080 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 5,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 6,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 7,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 8,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 9,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 10,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 11,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 12,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 13,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 14,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 15,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 16,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 17,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 18,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 19,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 20,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 21,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 22,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-22 12:54:48.081 INFO  [main] RestAssuredClient - API Response Time: 148 ms
