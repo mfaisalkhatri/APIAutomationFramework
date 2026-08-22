@@ -277,10 +277,10 @@ FrameworkConfig
      │
      ▼
 ConfigManager
+
 ```
 
-`ConfigProvider` allows the configuration source to be changed in the future without changing the rest of the framework.
----
+ConfigProvider allows the configuration source to be changed in the future without changing the rest of the framework.
 
 # Writing API Tests
 
@@ -606,3 +606,14 @@ The framework can be extended with:
 * Request builders for common API patterns
 
 ---
+
+## :question: Need Assistance?
+
+- Discuss your queries by writing to me @ `mohammadfaisalkhatri@gmail.com`
+  OR ping me on any of the social media sites using the below link:
+    - [Linktree](https://linktr.ee/faisalkhatri)
+
+## :thought_balloon: Checkout the tutorial articles and videos on the following links:
+
+- [Medium Blog](https://medium.com/@iamfaisalkhatri)
+- [YouTube Channel](https://www.youtube.com/@faisalkhatriqa)
