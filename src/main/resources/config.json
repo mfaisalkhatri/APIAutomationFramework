@@ -1,0 +1,19 @@
+{
+  "activeEnvironment": "qa",
+  "environments": {
+    "qa": {
+      "baseUrl": "http://localhost:3004/"
+    },
+    "preprod": {
+      "baseUrl": "https://preprod.example.com"
+    }
+  },
+  "timeouts": {
+    "connection": 10000
+  },
+  "logging": {
+    "enabled": true,
+    "request": true,
+    "response": true
+  }
+}
