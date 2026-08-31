@@ -3,6 +3,7 @@ package io.github.mfaisalkhatri.config;
 import io.github.mfaisalkhatri.config.model.EnvironmentConfig;
 import io.github.mfaisalkhatri.config.model.Frameworkconfig;
 import io.github.mfaisalkhatri.exceptions.ConfigurationException;
+import io.github.mfaisalkhatri.logging.FrameworkLifeCycleLogger;
 import lombok.Getter;
 
 public class ConfigManager {
@@ -14,10 +15,12 @@ public class ConfigManager {
     private final String          activeEnvironment;
 
     public ConfigManager () {
+        FrameworkLifeCycleLogger.loadingConfiguration ();
         final ConfigProvider configProvider = new JsonConfigProvider (CONFIG_FILE);
         this.config = configProvider.load ();
         this.activeEnvironment = resolveEnvironment ();
         validateConfiguration ();
+        FrameworkLifeCycleLogger.configurationLoaded (this.activeEnvironment, getBaseUrl ());
     }
 
     public String getBaseUrl () {
@@ -35,12 +38,12 @@ public class ConfigManager {
     }
 
     public boolean isRequestLoggingEnabled () {
-        return this.config.getLogging ()
+        return isLoggingEnabled () && this.config.getLogging ()
             .isRequest ();
     }
 
     public boolean isResponseLoggingEnabled () {
-        return this.config.getLogging ()
+        return isLoggingEnabled () && this.config.getLogging ()
             .isResponse ();
     }
 
