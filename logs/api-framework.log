@@ -1054,3 +1054,595 @@ Keep-Alive=timeout=5
 2026-08-31 17:41:45.176 INFO  [main] FrameworkLifeCycleLogger - ============================================================
 2026-08-31 17:41:45.177 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION COMPLETED
 2026-08-31 17:41:45.177 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 17:56:15.813 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 17:56:15.814 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION STARTED
+2026-08-31 17:56:15.814 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 17:56:15.854 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-31 17:56:15.872 INFO  [main] FrameworkLifeCycleLogger - Initializing API request context
+2026-08-31 17:56:15.873 INFO  [main] FrameworkLifeCycleLogger - Initializing Rest-Assured client
+2026-08-31 17:56:15.873 INFO  [main] FrameworkLifeCycleLogger - Loading framework configuration
+2026-08-31 17:56:15.972 INFO  [main] FrameworkLifeCycleLogger - Active environment: qa
+2026-08-31 17:56:15.973 INFO  [main] FrameworkLifeCycleLogger - Base URL: http://localhost:3004/
+2026-08-31 17:56:15.991 INFO  [main] TestListener - TEST STARTED : testPOSTOrder
+2026-08-31 17:56:15.992 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-31 17:56:15.993 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-31 17:56:15.993 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-31 17:56:16.537 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 17:56:16.537 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-31 17:56:16.537 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-31 17:56:16.537 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 17:56:16.537 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 17:56:16.538 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 17:56:16.538 INFO  [main] RestAssuredClient - Content-Length: 303
+2026-08-31 17:56:16.538 INFO  [main] RestAssuredClient - ETag: W/"12f-xjSLqpBVqeXmHA5oZxHM2cWR+G0"
+2026-08-31 17:56:16.538 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 12:26:16 GMT
+2026-08-31 17:56:16.538 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 17:56:16.538 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 17:56:16.553 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 17:56:16.554 INFO  [main] RestAssuredClient - API Response Time: 168 ms
+2026-08-31 17:56:16.565 INFO  [main] TestListener - TEST PASSED : testPOSTOrder
+2026-08-31 17:56:16.589 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 17:56:16.589 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION COMPLETED
+2026-08-31 17:56:16.589 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:01:06.029 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:01:06.030 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION STARTED
+2026-08-31 18:01:06.030 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:01:06.069 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-31 18:01:06.089 INFO  [main] FrameworkLifeCycleLogger - Initializing API request context
+2026-08-31 18:01:06.089 INFO  [main] FrameworkLifeCycleLogger - Initializing Rest-Assured client
+2026-08-31 18:01:06.089 INFO  [main] FrameworkLifeCycleLogger - Loading framework configuration
+2026-08-31 18:01:06.188 INFO  [main] FrameworkLifeCycleLogger - Active environment: qa
+2026-08-31 18:01:06.189 INFO  [main] FrameworkLifeCycleLogger - Base URL: http://localhost:3004/
+2026-08-31 18:01:06.207 INFO  [main] TestListener - TEST STARTED : testGETOrder
+2026-08-31 18:01:06.208 INFO  [main] RestAssuredClient - API Request: GET /getAllOrders
+2026-08-31 18:01:06.734 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 18:01:06.734 INFO  [main] RestAssuredClient - API Response Status: 404
+2026-08-31 18:01:06.734 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 404 Not Found
+2026-08-31 18:01:06.734 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 18:01:06.735 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 18:01:06.735 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 18:01:06.735 INFO  [main] RestAssuredClient - Content-Length: 30
+2026-08-31 18:01:06.735 INFO  [main] RestAssuredClient - ETag: W/"1e-9KOg2KwOr4U5LztyrArh5X3M5rA"
+2026-08-31 18:01:06.735 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 12:31:06 GMT
+2026-08-31 18:01:06.735 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 18:01:06.735 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 18:01:06.751 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "No Order found!!"
+}
+2026-08-31 18:01:06.752 INFO  [main] RestAssuredClient - API Response Time: 161 ms
+2026-08-31 18:01:06.785 INFO  [main] TestListener - TEST FAILED : testGETOrder
+2026-08-31 18:01:06.786 ERROR [main] TestListener - Failure Reason: value of: getStatusCode()
+expected: 200
+but was : 404
+2026-08-31 18:01:06.808 INFO  [main] TestListener - TEST STARTED : testPOSTOrder
+2026-08-31 18:01:06.808 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-31 18:01:06.809 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-31 18:01:06.809 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-31 18:01:06.841 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 18:01:06.841 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - Content-Length: 303
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - ETag: W/"12f-xjSLqpBVqeXmHA5oZxHM2cWR+G0"
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 12:31:06 GMT
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 18:01:06.842 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 18:01:06.843 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 18:01:06.843 INFO  [main] RestAssuredClient - API Response Time: 24 ms
+2026-08-31 18:01:06.844 INFO  [main] TestListener - TEST PASSED : testPOSTOrder
+2026-08-31 18:01:06.850 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:01:06.850 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION COMPLETED
+2026-08-31 18:01:06.850 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:04:40.016 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:04:40.017 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION STARTED
+2026-08-31 18:04:40.017 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:04:40.055 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-31 18:04:40.075 INFO  [main] FrameworkLifeCycleLogger - Initializing API request context
+2026-08-31 18:04:40.075 INFO  [main] FrameworkLifeCycleLogger - Initializing Rest-Assured client
+2026-08-31 18:04:40.076 INFO  [main] FrameworkLifeCycleLogger - Loading framework configuration
+2026-08-31 18:04:40.177 INFO  [main] FrameworkLifeCycleLogger - Active environment: qa
+2026-08-31 18:04:40.177 INFO  [main] FrameworkLifeCycleLogger - Base URL: http://localhost:3004/
+2026-08-31 18:04:40.195 INFO  [main] TestListener - TEST STARTED : testPOSTOrder
+2026-08-31 18:04:40.196 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-31 18:04:40.197 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-31 18:04:40.197 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-31 18:04:40.717 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 18:04:40.724 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-31 18:04:40.724 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-31 18:04:40.724 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 18:04:40.724 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 18:04:40.724 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 18:04:40.724 INFO  [main] RestAssuredClient - Content-Length: 555
+2026-08-31 18:04:40.724 INFO  [main] RestAssuredClient - ETag: W/"22b-OpmLbKhiVJT7HD27TkQjmi+xK1E"
+2026-08-31 18:04:40.725 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 12:34:40 GMT
+2026-08-31 18:04:40.725 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 18:04:40.725 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 18:04:40.742 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 18:04:40.742 INFO  [main] RestAssuredClient - API Response Time: 156 ms
+2026-08-31 18:04:40.753 INFO  [main] TestListener - TEST PASSED : testPOSTOrder
+2026-08-31 18:04:40.773 INFO  [main] TestListener - TEST STARTED : testGETOrder
+2026-08-31 18:04:40.774 INFO  [main] RestAssuredClient - API Request: GET /getAllOrders
+2026-08-31 18:04:40.787 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - API Response Status: 200
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 200 OK
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - Content-Length: 557
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - ETag: W/"22d-yq/hze5G4hZktiqnrEMeOhkI/DM"
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 12:34:40 GMT
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 18:04:40.788 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 18:04:40.790 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders fetched successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        },
+        {
+            "id": 3,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 4,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 18:04:40.790 INFO  [main] RestAssuredClient - API Response Time: 10 ms
+2026-08-31 18:04:40.810 INFO  [main] TestListener - TEST FAILED : testGETOrder
+2026-08-31 18:04:40.810 ERROR [main] TestListener - Failure Reason: value of:
+    getBody()
+expected to contain:
+    [{
+        "user_id": "1",
+        "product_id": "1",
+        "product_name": "iPhone",
+        "product_amount": 500.00,
+        "qty": 1,
+        "tax_amt": 5.99,
+        "total_amt": 505.99
+    },
+    {
+        "user_id": "1",
+        "product_id": "2",
+        "product_name": "iPad",
+        "product_amount": 699.00,
+        "qty": 1,
+        "tax_amt": 7.99,
+        "total_amt": 706.99
+    }]
+but was:
+    {"message":"Orders fetched successfully!","orders":[{"id":1,"user_id":"1","product_id":"1","product_name":"iPhone","product_amount":500,"qty":1,"tax_amt":5.99,"total_amt":505.99},{"id":2,"user_id":"1","product_id":"2","product_name":"iPad","product_amount":699,"qty":1,"tax_amt":7.99,"total_amt":706.99},{"id":3,"user_id":"1","product_id":"1","product_name":"iPhone","product_amount":500,"qty":1,"tax_amt":5.99,"total_amt":505.99},{"id":4,"user_id":"1","product_id":"2","product_name":"iPad","product_amount":699,"qty":1,"tax_amt":7.99,"total_amt":706.99}]}
+2026-08-31 18:04:40.819 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:04:40.819 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION COMPLETED
+2026-08-31 18:04:40.819 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:05:00.326 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:05:00.328 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION STARTED
+2026-08-31 18:05:00.328 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:05:00.369 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-31 18:05:00.387 INFO  [main] FrameworkLifeCycleLogger - Initializing API request context
+2026-08-31 18:05:00.388 INFO  [main] FrameworkLifeCycleLogger - Initializing Rest-Assured client
+2026-08-31 18:05:00.388 INFO  [main] FrameworkLifeCycleLogger - Loading framework configuration
+2026-08-31 18:05:00.481 INFO  [main] FrameworkLifeCycleLogger - Active environment: qa
+2026-08-31 18:05:00.481 INFO  [main] FrameworkLifeCycleLogger - Base URL: http://localhost:3004/
+2026-08-31 18:05:00.500 INFO  [main] TestListener - TEST STARTED : testPOSTOrder
+2026-08-31 18:05:00.501 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-31 18:05:00.501 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-31 18:05:00.501 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-31 18:05:01.024 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 18:05:01.024 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-31 18:05:01.024 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-31 18:05:01.024 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 18:05:01.024 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 18:05:01.024 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 18:05:01.024 INFO  [main] RestAssuredClient - Content-Length: 303
+2026-08-31 18:05:01.025 INFO  [main] RestAssuredClient - ETag: W/"12f-xjSLqpBVqeXmHA5oZxHM2cWR+G0"
+2026-08-31 18:05:01.025 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 12:35:01 GMT
+2026-08-31 18:05:01.025 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 18:05:01.025 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 18:05:01.041 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 18:05:01.041 INFO  [main] RestAssuredClient - API Response Time: 168 ms
+2026-08-31 18:05:01.053 INFO  [main] TestListener - TEST PASSED : testPOSTOrder
+2026-08-31 18:05:01.075 INFO  [main] TestListener - TEST STARTED : testGETOrder
+2026-08-31 18:05:01.075 INFO  [main] RestAssuredClient - API Request: GET /getAllOrders
+2026-08-31 18:05:01.089 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 18:05:01.089 INFO  [main] RestAssuredClient - API Response Status: 200
+2026-08-31 18:05:01.089 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 200 OK
+2026-08-31 18:05:01.089 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 18:05:01.090 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 18:05:01.090 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 18:05:01.090 INFO  [main] RestAssuredClient - Content-Length: 305
+2026-08-31 18:05:01.090 INFO  [main] RestAssuredClient - ETag: W/"131-XBN2DfQGEiLIzz1ak7KLN6NzBUQ"
+2026-08-31 18:05:01.090 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 12:35:01 GMT
+2026-08-31 18:05:01.090 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 18:05:01.090 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 18:05:01.091 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders fetched successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 18:05:01.091 INFO  [main] RestAssuredClient - API Response Time: 10 ms
+2026-08-31 18:05:01.117 INFO  [main] TestListener - TEST FAILED : testGETOrder
+2026-08-31 18:05:01.117 ERROR [main] TestListener - Failure Reason: value of:
+    getBody()
+expected to contain:
+    [{
+        "user_id": "1",
+        "product_id": "1",
+        "product_name": "iPhone",
+        "product_amount": 500.00,
+        "qty": 1,
+        "tax_amt": 5.99,
+        "total_amt": 505.99
+    },
+    {
+        "user_id": "1",
+        "product_id": "2",
+        "product_name": "iPad",
+        "product_amount": 699.00,
+        "qty": 1,
+        "tax_amt": 7.99,
+        "total_amt": 706.99
+    }]
+but was:
+    {"message":"Orders fetched successfully!","orders":[{"id":1,"user_id":"1","product_id":"1","product_name":"iPhone","product_amount":500,"qty":1,"tax_amt":5.99,"total_amt":505.99},{"id":2,"user_id":"1","product_id":"2","product_name":"iPad","product_amount":699,"qty":1,"tax_amt":7.99,"total_amt":706.99}]}
+2026-08-31 18:05:01.126 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 18:05:01.126 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION COMPLETED
+2026-08-31 18:05:01.126 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 19:00:50.850 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 19:00:50.852 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION STARTED
+2026-08-31 19:00:50.852 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 19:00:50.898 INFO  [main] Utils - [TestNG] Running:
+  /Users/faisalkhatri/github/APIAutomationFramework/testng.xml
+
+2026-08-31 19:00:50.919 INFO  [main] FrameworkLifeCycleLogger - Initializing API request context
+2026-08-31 19:00:50.919 INFO  [main] FrameworkLifeCycleLogger - Initializing Rest-Assured client
+2026-08-31 19:00:50.920 INFO  [main] FrameworkLifeCycleLogger - Loading framework configuration
+2026-08-31 19:00:51.028 INFO  [main] FrameworkLifeCycleLogger - Active environment: qa
+2026-08-31 19:00:51.028 INFO  [main] FrameworkLifeCycleLogger - Base URL: http://localhost:3004/
+2026-08-31 19:00:51.048 INFO  [main] TestListener - TEST STARTED : testPOSTOrder
+2026-08-31 19:00:51.049 INFO  [main] RestAssuredClient - API Request: POST /addOrder
+2026-08-31 19:00:51.049 INFO  [main] RestAssuredClient - Request Headers: {accept=application/json, Content-Type=application/json}
+2026-08-31 19:00:51.049 INFO  [main] RestAssuredClient - Request Body: [{
+    "user_id": "1",
+    "product_id": "1",
+    "product_name": "iPhone",
+    "product_amount": 500.00,
+    "qty": 1,
+    "tax_amt": 5.99,
+    "total_amt": 505.99
+},
+{
+    "user_id": "1",
+    "product_id": "2",
+    "product_name": "iPad",
+    "product_amount": 699.00,
+    "qty": 1,
+    "tax_amt": 7.99,
+    "total_amt": 706.99
+}]
+2026-08-31 19:00:51.581 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 19:00:51.581 INFO  [main] RestAssuredClient - API Response Status: 201
+2026-08-31 19:00:51.581 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 201 Created
+2026-08-31 19:00:51.581 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 19:00:51.581 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 19:00:51.582 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 19:00:51.582 INFO  [main] RestAssuredClient - Content-Length: 303
+2026-08-31 19:00:51.582 INFO  [main] RestAssuredClient - ETag: W/"12f-xjSLqpBVqeXmHA5oZxHM2cWR+G0"
+2026-08-31 19:00:51.582 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 13:30:51 GMT
+2026-08-31 19:00:51.582 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 19:00:51.582 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 19:00:51.597 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders added successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 19:00:51.597 INFO  [main] RestAssuredClient - API Response Time: 168 ms
+2026-08-31 19:00:51.608 INFO  [main] TestListener - TEST PASSED : testPOSTOrder
+2026-08-31 19:00:51.629 INFO  [main] TestListener - TEST STARTED : testGETOrder
+2026-08-31 19:00:51.629 INFO  [main] RestAssuredClient - API Request: GET /getAllOrders
+2026-08-31 19:00:51.642 INFO  [main] RestAssuredClient - API Response Cookies: {}
+2026-08-31 19:00:51.642 INFO  [main] RestAssuredClient - API Response Status: 200
+2026-08-31 19:00:51.642 INFO  [main] RestAssuredClient - API Response Status Line: HTTP/1.1 200 OK
+2026-08-31 19:00:51.642 INFO  [main] RestAssuredClient - API Response Headers:
+2026-08-31 19:00:51.642 INFO  [main] RestAssuredClient - X-Powered-By: Express
+2026-08-31 19:00:51.643 INFO  [main] RestAssuredClient - Content-Type: application/json; charset=utf-8
+2026-08-31 19:00:51.643 INFO  [main] RestAssuredClient - Content-Length: 305
+2026-08-31 19:00:51.643 INFO  [main] RestAssuredClient - ETag: W/"131-XBN2DfQGEiLIzz1ak7KLN6NzBUQ"
+2026-08-31 19:00:51.643 INFO  [main] RestAssuredClient - Date: Mon, 31 Aug 2026 13:30:51 GMT
+2026-08-31 19:00:51.643 INFO  [main] RestAssuredClient - Connection: keep-alive
+2026-08-31 19:00:51.643 INFO  [main] RestAssuredClient - Keep-Alive: timeout=5
+2026-08-31 19:00:51.644 INFO  [main] RestAssuredClient - API Response Body: {
+    "message": "Orders fetched successfully!",
+    "orders": [
+        {
+            "id": 1,
+            "user_id": "1",
+            "product_id": "1",
+            "product_name": "iPhone",
+            "product_amount": 500,
+            "qty": 1,
+            "tax_amt": 5.99,
+            "total_amt": 505.99
+        },
+        {
+            "id": 2,
+            "user_id": "1",
+            "product_id": "2",
+            "product_name": "iPad",
+            "product_amount": 699,
+            "qty": 1,
+            "tax_amt": 7.99,
+            "total_amt": 706.99
+        }
+    ]
+}
+2026-08-31 19:00:51.644 INFO  [main] RestAssuredClient - API Response Time: 9 ms
+2026-08-31 19:00:51.657 INFO  [main] TestListener - TEST PASSED : testGETOrder
+2026-08-31 19:00:51.663 INFO  [main] FrameworkLifeCycleLogger - ============================================================
+2026-08-31 19:00:51.663 INFO  [main] FrameworkLifeCycleLogger - TEST EXECUTION COMPLETED
+2026-08-31 19:00:51.663 INFO  [main] FrameworkLifeCycleLogger - ============================================================

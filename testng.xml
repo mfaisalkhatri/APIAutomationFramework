@@ -2,12 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="API Automation Framework Unit Tests">
     <listeners>
-        <listener
-                class-name="io.github.mfaisalkhatri.listener.TestExecutionListener"/>
+        <listener class-name="io.github.mfaisalkhatri.listener.TestExecutionListener"/>
+        <listener class-name="io.github.mfaisalkhatri.listener.TestListener"/>
     </listeners>
     <test name="Unit Tests">
         <classes>
-            <class name="io.github.mfaisalkhatri.restfulecommerce.RestfulEcommerceTests"/>
+            <class name="io.github.mfaisalkhatri.restfulecommerce.RestfulEcommerceTests">
+                <methods>
+                    <include name="testPOSTOrder"/>
+                    <include name="testGETOrder"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

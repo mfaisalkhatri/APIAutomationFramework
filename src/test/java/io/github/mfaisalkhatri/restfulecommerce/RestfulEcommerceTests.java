@@ -7,6 +7,8 @@ import java.util.Map;
 
 import io.github.mfaisalkhatri.request.ApiRequest;
 import io.github.mfaisalkhatri.response.ApiResponse;
+import io.github.mfaisalkhatri.restfulecommerce.pojo.Order;
+import io.github.mfaisalkhatri.restfulecommerce.pojo.OrderResponse;
 import org.testng.annotations.Test;
 
 public class RestfulEcommerceTests extends BaseTest {
@@ -47,5 +49,29 @@ public class RestfulEcommerceTests extends BaseTest {
         final ApiResponse response = this.apiRequestContext.execute (request);
 
         assertThat (response.getStatusCode ()).isEqualTo (201);
+    }
+
+    @Test
+    public void testGETOrder () {
+        final ApiRequest request = ApiRequest.builder ()
+            .get ()
+            .endpoint ("/getAllOrders")
+            .build ();
+
+        final ApiResponse response = this.apiRequestContext.execute (request);
+        assertThat (response.getStatusCode ()).isEqualTo (200);
+        final OrderResponse orderResponse = response.getBodyAs (OrderResponse.class);
+        assertThat (orderResponse.getMessage ()).isEqualTo ("Orders fetched successfully!");
+        assertThat (orderResponse.getOrders ()).hasSize (2);
+
+        final Order firstOrder = orderResponse.getOrders ()
+            .get (0);
+        assertThat (firstOrder.getId ()).isEqualTo (1);
+        assertThat (firstOrder.getUser_id ()).isEqualTo ("1");
+        assertThat (firstOrder.getProduct_id ()).isEqualTo ("1");
+        assertThat (firstOrder.getProduct_amount ()).isEqualTo (500);
+        assertThat (firstOrder.getQty ()).isEqualTo (1);
+        assertThat (firstOrder.getTax_amt ()).isEqualTo (5.99);
+        assertThat (firstOrder.getTotal_amt ()).isEqualTo (505.99);
     }
 }
