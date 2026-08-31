@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import io.github.mfaisalkhatri.config.ConfigManager;
 import io.github.mfaisalkhatri.exceptions.ApiRequestException;
 import io.github.mfaisalkhatri.logging.FrameworkLogger;
+import io.github.mfaisalkhatri.logging.RequestResponseLogger;
 import io.github.mfaisalkhatri.request.ApiRequest;
 import io.github.mfaisalkhatri.response.ApiResponse;
 import io.restassured.RestAssured;
@@ -101,40 +102,13 @@ public class RestAssuredClient implements ApiClient {
         if (!this.configManager.isRequestLoggingEnabled ()) {
             return;
         }
-
-        LOGGER.info ("API Request: {} {}", request.getMethod (), request.getEndpoint ());
-        if (request.getHeaders () != null) {
-            LOGGER.info ("Request Headers: {}", request.getHeaders ());
-        }
-
-        if (request.getQueryParams () != null) {
-            LOGGER.info ("Request Query Params: {}", request.getQueryParams ());
-        }
-        if (request.getPathParams () != null) {
-            LOGGER.info ("Request Path Params: {}", request.getPathParams ());
-        }
-        if (request.getBody () != null) {
-            LOGGER.info ("Request Body: {}", request.getBody ());
-        }
+        RequestResponseLogger.logRequest (request);
     }
 
     private void logResponse (final Response response) {
         if (!this.configManager.isResponseLoggingEnabled ()) {
             return;
         }
-
-        if (response.cookies () != null) {
-            LOGGER.info ("API Response Cookies: {}", response.cookies ());
-        }
-        LOGGER.info ("API Response Status: {}", response.statusCode ());
-        LOGGER.info ("API Response Status Line: {}", response.statusLine ());
-        LOGGER.info ("API Response Headers:");
-        response.headers ()
-            .asList ()
-            .forEach (header -> LOGGER.info ("{}: {}", header.getName (), header.getValue ()));
-        LOGGER.info ("API Response Body: {}", response.body ()
-            .asPrettyString ());
-        LOGGER.info ("API Response Time: {} {}", response.time (), "ms");
-
+        RequestResponseLogger.logResponse (response);
     }
 }
